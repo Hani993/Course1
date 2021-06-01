@@ -99,9 +99,9 @@ function buildAndShowHomeHTML (categories) {
     function (homeHtml) {
 
       var chosenCat = chooseRandomCategory(categories).short_name;
-      var randomCategoryShortName;
+ 
 
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlUrl, randomCategoryShortName, chosenCat);
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlUrl, "randomCategoryShortName", chosenCat);
 
       insertHtml('#main-content', homeHtmlToInsertIntoMainPage);
 
